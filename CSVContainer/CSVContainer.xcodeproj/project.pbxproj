@@ -10,6 +10,7 @@
 		16D441601E07CD8100DF543A /* CSVContainer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D441561E07CD8100DF543A /* CSVContainer.framework */; };
 		16D441651E07CD8100DF543A /* CSVContainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D441641E07CD8100DF543A /* CSVContainerTests.swift */; };
 		16D441671E07CD8100DF543A /* CSVContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 16D441591E07CD8100DF543A /* CSVContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16D441711E07CDEE00DF543A /* CSVContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D441701E07CDEE00DF543A /* CSVContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		16D4415F1E07CD8100DF543A /* CSVContainerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSVContainerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16D441641E07CD8100DF543A /* CSVContainerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVContainerTests.swift; sourceTree = "<group>"; };
 		16D441661E07CD8100DF543A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16D441701E07CDEE00DF543A /* CSVContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				16D441591E07CD8100DF543A /* CSVContainer.h */,
 				16D4415A1E07CD8100DF543A /* Info.plist */,
+				16D441701E07CDEE00DF543A /* CSVContainer.swift */,
 			);
 			path = CSVContainer;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 					16D441551E07CD8100DF543A = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = KC8N9BMQJY;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					16D4415E1E07CD8100DF543A = {
@@ -198,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16D441711E07CDEE00DF543A /* CSVContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +324,7 @@
 		16D4416B1E07CD8100DF543A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -333,6 +339,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.crazism.CSVContainer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -340,6 +347,7 @@
 		16D4416C1E07CD8100DF543A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -361,6 +369,7 @@
 		16D4416E1E07CD8100DF543A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = KC8N9BMQJY;
 				INFOPLIST_FILE = CSVContainerTests/Info.plist;
@@ -374,6 +383,7 @@
 		16D4416F1E07CD8100DF543A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = KC8N9BMQJY;
 				INFOPLIST_FILE = CSVContainerTests/Info.plist;
